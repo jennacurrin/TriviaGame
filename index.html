@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">    
+</head>
+      <body class="text-center">
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            
+          <!-- First Page with Start Button (got button using bootstrap) -->
+                <main role="main" class="inner cover">
+                        <h1 class="cover-heading">Harry Potter Trivia!</h1>
+                        <p class="lead btn btn-lg btn-dark" id="game-start">Start</p>
+                        <div class="col-lg-4 col-lg-offset-4 text-center">
+                            <p id="countdown">Time Remaining:<span id="timer"></span></p>
+                        </div>
+                </main>
+                
+                <!-- Questions Page -->
+                <div class="trivia-ques text-center">
+                    <p class="quest">1. What creature is depicted as the emblem for the Gryffindor house?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Lion
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Eagle  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Snake  
+                        </label>
+                    </form>
+
+                    <p class="quest">2. Among the wizarding community, the term "Muggle" refers to what kind of person?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> A magical person with only one magical parent 
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> A non-magical person from a non magical family 
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> A non-magical person from a magical family  
+                        </label>
+                    </form>
+
+                    <p class="quest">3. Which Hogwarts student says, "I don't go looking for trouble. Trouble usually finds me"?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Ron Weasley  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Fred Weasley
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Harry Potter 
+                        </label>
+                    </form>
+
+                    <p class="quest">4. What do Harry and Ron crash into when they fly Arthur Weasley's Ford Anglia to Hogwarts?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Hogwarts  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> The Great Lake  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> The Whomping Willow  
+                        </label>
+                    </form>
+
+                    <p class="quest">5. What is the incantation for the Summoning Charm?
+                    </p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Avis  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Accio  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Aparecium  
+                        </label>
+                    </form>
+
+                    <p class="quest">6. What colour is the Hogwarts Express?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Scarlet  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Emerald 
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Indigo
+                        </label>
+                    </form>
+
+                    <p class="quest">7. How are parcels and letters sent in the wizarding world?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Owls  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Floo Network
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Broomstick
+                        </label>
+                    </form>
+
+                    <p class="quest">8. Which Hogwarts student says, "Just because you've got the emotional range of a teaspoon doesn't mean we all have"?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Ginny Weasley     
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Hermione Granger     
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Pansy Parkinson    
+                        </label>
+                    </form>
+                
+                    <!-- Done Button -->
+                    <div>
+                        <p class="lead btn btn-lg btn-danger" id="game-done">Done
+                        </p>
+                    </div>
+                </div>
+
+                  <!-- Last page with Summary of results -->
+                    <div class="results">
+                        <p class="lead2" id="summary">All Done!</p> 
+                        <p class="lead2" id="correctScore">Correct Answers:</p>
+                        <p class="lead2" id="wrongScore"></p>
+                        <p class="lead2" id="unanswered"></p>
+                    </div>
+                
+        </div>  <!--Div class container end -->
+
+        <!-- JQuery & Javascript file Links -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+
+      </body> 
